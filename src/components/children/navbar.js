@@ -7,7 +7,7 @@ export default class NavBar extends React.Component {
         return (
             <Navbar sticky="top" bg="dark" variant="dark">
                 <Navbar.Brand href="#home">
-                    {'HalseyAuction'}
+                    {'Auctions™'}
                 </Navbar.Brand>
             </Navbar>
         )
