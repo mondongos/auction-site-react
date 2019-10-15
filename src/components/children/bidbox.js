@@ -6,42 +6,48 @@ export default class BidBox extends React.Component {
         return (
             <Container className="bidbox-container">
                 <Row>
-                    <Col xs lg="2"></Col>
-                    <Col>
+                    <Col md="2"></Col>
+                    <Col xs lg="5">
                         <strong>£{this.props.currentBid}</strong>
                     </Col>
-                    <Col>
+                    <Col xs lg="5">
                         {this.props.numberOfBids} bids
                     </Col>
-                    <Col xs lg="2"></Col>
+                    <Col md="2"></Col>
                 </Row>
                 <br></br>
                 <Row>
-                    <Col xs lg="10"></Col>
+                    <Col md="2"></Col>
                     <Col>
                     <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                             <InputGroup.Text>£</InputGroup.Text>
                         </InputGroup.Prepend>
-                        <FormControl aria-label="Amount (to the nearest pound)" />
+                        <FormControl 
+                        aria-label="Amount (to the nearest pound)"
+                        name="userBid"
+                        type="number"
+                        value={this.props.userBid}
+                        onChange={this.props.handleChange}/>
                         <InputGroup.Append>
                             <InputGroup.Text>.00</InputGroup.Text>
                         </InputGroup.Append>
                     </InputGroup>
                     </Col>
-                    <Col xs lg="10"></Col>
+                    <Col md="2"></Col>
                 </Row>
                 <Row>
-                <Col xs lg="2"></Col>
-                    <Col>
-                        <Button
-                        variant="success">
-                            Submit bid
-                        </Button>
-                    </Col>
-                    <Col xs lg="2"></Col>
+                <Col md="4"></Col>
+                <Col md="auto">
+                    <Button
+                    variant="success"
+                    onClick={this.props.onSubmit}
+                    >
+                        Submit bid
+                    </Button>
+                </Col>
+                <Col md="4"></Col>
                 </Row>
-                
             </Container>
         )
     }

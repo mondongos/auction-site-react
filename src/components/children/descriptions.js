@@ -25,15 +25,22 @@ export default class AuctionDescription extends React.Component {
                         </Row>
                         <br></br>
                         <Row>
+                        
+                        <Col>
                             <CountTimer
                             auctionLength={this.props.auctionLength}/>
+                        </Col>
+                        
                         </Row>
                         <br></br>
                         <Row>
                             <Col>
                             <BidBox
                             currentBid={this.props.currentBid}
-                            numberOfBids={this.props.numberOfBids}/>
+                            numberOfBids={this.props.numberOfBids}
+                            userBid={this.props.userBid}
+                            handleChange={this.props.handleChange}
+                            onSubmit={this.props.onSubmit}/>
                             </Col>
                         </Row>
                     </Col>

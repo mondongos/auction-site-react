@@ -13,7 +13,7 @@ export default class CountTimer extends React.Component {
                     {() => (
                         <React.Fragment>
                             <Row>
-                                <Col xs lg="10"><strong>Time remaining:</strong></Col>
+                                <Col md="3"><strong>Time remaining:</strong></Col>
                                 <Col md="auto"><Timer.Days />d </Col>
                                 <Col md="auto"><Timer.Hours />h </Col>
                                 <Col md="auto"><Timer.Minutes />m </Col>
