@@ -1,7 +1,8 @@
 .bidbox-container {
-  
+  max-width: 400px;
   padding: 20px;
   background: #f8f8f8;
+  
 }
 
 .auction-image {
@@ -25,3 +26,4 @@
 .count-container {
   font-size: 12px
 }
+

@@ -7,10 +7,10 @@ export default class BidBox extends React.Component {
             <Container className="bidbox-container">
                 <Row>
                     <Col xs lg="2"></Col>
-                    <Col md="auto">
+                    <Col>
                         <strong>£{this.props.currentBid}</strong>
                     </Col>
-                    <Col md="auto">
+                    <Col>
                         {this.props.numberOfBids} bids
                     </Col>
                     <Col xs lg="2"></Col>
@@ -18,7 +18,7 @@ export default class BidBox extends React.Component {
                 <br></br>
                 <Row>
                     <Col xs lg="10"></Col>
-                    <Col md="auto">
+                    <Col>
                     <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                             <InputGroup.Text>£</InputGroup.Text>
@@ -33,7 +33,7 @@ export default class BidBox extends React.Component {
                 </Row>
                 <Row>
                 <Col xs lg="2"></Col>
-                    <Col md="auto">
+                    <Col>
                         <Button
                         variant="success">
                             Submit bid
