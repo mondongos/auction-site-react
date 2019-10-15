@@ -1,5 +1,27 @@
 .bidbox-container {
-  max-width: 300px;
+  
   padding: 20px;
   background: #f8f8f8;
+}
+
+.auction-image {
+  align-content: center;
+}
+
+.auction-title {
+  font-size: 30px;
+  font-weight: bold;;
+}
+
+.auction-desc {
+  font-size: 15px;
+}
+
+.desc-container {
+  border-bottom: 2px; 
+  border-bottom-color: grey;
+}
+
+.count-container {
+  font-size: 12px
 }
