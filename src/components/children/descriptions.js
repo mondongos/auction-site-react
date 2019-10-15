@@ -28,7 +28,7 @@ export default class AuctionDescription extends React.Component {
                         
                         <Col>
                             <CountTimer
-                            auctionLength={this.props.auctionLength}/>
+                            auctionEnd={this.props.auctionEnd}/>
                         </Col>
                         
                         </Row>

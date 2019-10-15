@@ -5,10 +5,11 @@ import {Row, Col, Container} from 'react-bootstrap'
 
 export default class CountTimer extends React.Component {
     render() {
+        const timeLeft = this.props.auctionEnd - new Date()
         return (
             <Container className="count-container">
                 <Timer 
-                    initialTime={this.props.auctionLength}
+                    initialTime={timeLeft}
                     direction="backward">
                     {() => (
                         <React.Fragment>

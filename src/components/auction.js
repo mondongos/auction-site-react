@@ -13,7 +13,7 @@ export default class Auction extends React.Component {
             image: 'https://images-na.ssl-images-amazon.com/images/I/81nn7QDJFeL._SX679_.jpg', 
             currentBid: 10,
             numberOfBids: 0, 
-            auctionLength: 3000000, 
+            auctionEnd: new Date('October 20, 2019 15:24:00'), 
             userBid: ''
         }
     }
@@ -47,7 +47,7 @@ export default class Auction extends React.Component {
                image={this.state.image}
                currentBid={this.state.currentBid}
                numberOfBids={this.state.numberOfBids}
-               auctionLength={this.state.auctionLength}
+               auctionEnd={this.state.auctionEnd}
                userBid={this.state.userBid}
                handleChange={this.handleChange}
                onSubmit={this.handleSubmit}
