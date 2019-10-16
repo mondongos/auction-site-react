@@ -10,6 +10,7 @@ export default class Controller extends React.Component {
             auctions: []
         }
     }
+
     render() {
         return (
             <React.Fragment>
@@ -17,7 +18,7 @@ export default class Controller extends React.Component {
                 <br></br>
                 <Auction/>
                 <br></br>
-                <CreateAuction/>
+                {/* <CreateAuction/> */}
             </React.Fragment>
         )
     }

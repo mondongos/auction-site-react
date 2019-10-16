@@ -16,6 +16,7 @@ export default class Auction extends React.Component {
             auctionEnd: new Date('October 20, 2019 15:24:00'), 
             userBid: ''
         }
+        console.log(this)
     }
 
     handleChange = (e) => {
